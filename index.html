@@ -26,7 +26,7 @@
         <h3>End To End Encryption</h3>
         <p class="project-description">
           <img src="end2end.png" />
-          (<a href="https://leudla.herokuapp.com">live</a>/<a href="https://github.com/thwee-alchemist/leudla.herokuapp.com">code</a>) End to end encrypted communications written in Javascript, thanks to <a href="https://developer.mozilla.org/en-US/docs/Web/API/Crypto/subtle">crypto.subtle</a>. The server uses <a href="https://expressjs.com">express.js</a> and <a href="https://socket.io">socket.io</a>.
+          (<a href="https://leudla.herokuapp.com">live</a>/<a href="https://github.com/thwee-alchemist/leudla.herokuapp.com">code</a>) End to end encrypted communications written in Javascript, thanks to <a href="https://developer.mozilla.org/en-US/docs/Web/API/Crypto/subtle">crypto.subtle</a>. Through the UI, one creates a public/private key pair, then submits it to server. After selecting a recipient and typing a message, the sender and recipients' private and public keys (respectively) are used to derive a shared key, which is used to encrypt the message for transit. The recipient uses the sender's public key, and their own private key to rederive the shared key and decrypt the message. The server uses <a href="https://expressjs.com">express.js</a> and <a href="https://socket.io">socket.io</a>.
         </p>
       </div>
       <br>
